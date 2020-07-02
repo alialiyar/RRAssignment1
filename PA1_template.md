@@ -1,6 +1,6 @@
 rm(list=ls())
  
-## check if the source file is loaded, if not, we download it and unzip the file:
+## check if the source file is loaded, if not, download and unzip the file
 
 if(!file.exists("activity.csv")) {
   tempfile <- tempfile()
@@ -9,11 +9,11 @@ if(!file.exists("activity.csv")) {
   unlink(tempfile)
 }
 
-## Loading and Processing Data. 
+## Loading and Processing Data 
 
 activity <- read.csv("activity.csv")
 
-## inspecting the data set. 
+## inspecting the data set 
 
 summary(activity)
 str(activity)

@@ -366,16 +366,16 @@ summary {
 
 
 <p>rm(list=ls())</p>
-<div id="check-if-the-source-file-is-loaded-if-not-we-download-it-and-unzip-the-file" class="section level2">
-<h2>check if the source file is loaded, if not, we download it and unzip the file:</h2>
+<div id="check-if-the-source-file-is-loaded-if-not-download-and-unzip-the-file" class="section level2">
+<h2>check if the source file is loaded, if not, download and unzip the file</h2>
 <p>if(!file.exists(“activity.csv”)) { tempfile &lt;- tempfile() download.file(“<a href="http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip" class="uri">http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip</a>”,destfile = tempfile) unzip(tempfile) unlink(tempfile) }</p>
 </div>
-<div id="loading-and-processing-data." class="section level2">
-<h2>Loading and Processing Data.</h2>
+<div id="loading-and-processing-data" class="section level2">
+<h2>Loading and Processing Data</h2>
 <p>activity &lt;- read.csv(“activity.csv”)</p>
 </div>
-<div id="inspecting-the-data-set." class="section level2">
-<h2>inspecting the data set.</h2>
+<div id="inspecting-the-data-set" class="section level2">
+<h2>inspecting the data set</h2>
 <p>summary(activity) str(activity)</p>
 </div>
 <div id="total-number-of-steps-per-day" class="section level2">
